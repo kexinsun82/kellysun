@@ -1,0 +1,79 @@
+:root {
+  /* Colors */
+  --bgc: #232946;
+  --pink: #eebbc3;
+  --white: #fffffe;
+  --blue: #b8c1ec;
+
+  /* Font family */
+  --Heading1: "Playball", "Times New Roman", system-ui;
+  --Heading2: "Roboto Serif", "Times New Roman", Times, serif;
+  --MainText: "Roboto Flex", Arial, sans-serif;
+}
+
+/* Body */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--white);
+  background-color: var(--bgc);
+  font-family: var(--Heading2);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header ul li {
+  list-style: none;
+  font-family: var(--Heading2);
+}
+li a:link, a:visited, a:active {
+  text-decoration: none;
+  color: var(--white);
+}
+li a:hover {
+  border-bottom: 3px dashed var(--pink);
+  color: var(--pink);
+  padding-bottom: 8px;
+}
+
+/* Navigation FLEX */
+#main-navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.875em;
+}
+.side-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  height: 100vh;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+.icon-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Content */
+.logo {
+  width: 3rem;
+}
+.menu {
+  gap: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  width: 5rem;
+}

@@ -1,29 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kexin Sun-profile splash</title>
-  <link rel="stylesheet" href="style/style.css">
+  <title>Kelly Sun | Portfolio</title>
+  <!--Link to CSS file-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+    rel="stylesheet">
+  <!--Link to JS file-->
+  <script defer async src="./js/script.js"></script>
 </head>
+
 <body>
-  <div>
-    <h1>Kexin Sun</h1>
-    <hr>
-    <h2>Web Development</h2>
-    <h3>Humber College Student</h3>
-    <p>Front-end Developer</p>
-    <p>
-      Learning code at Humber College, Toronto, Canada.
-    </p>
-    <div class="linkbox">
-      <a target="_blank" href="https://www.linkedin.com/in/kellysun82/"><img src="images/linkedin.png" alt="linkedin account link"></a>
-    <a target="_blank" href="https://github.com/kexinsun82"><img src="images/github.png" alt="GitHub account link"></a>
+  <header id="header">
+    <div class="side-nav">
+      <nav id="main-navigation" aria-label="Main navigation">
+        <a href="index.html"><img class="logo" src="./images/LOGO.png" alt="Kelly Sun's LOGO"></a>
+        <ul class="menu">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link current-menu"><a href="#">Projects</a></li>
+          <li class="link"><a href="#">About</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
+        <div class="icon-box">
+          <a target="_blank" href="https://github.com/kexinsun82"><img class="icon" src="./images/nav-GitHub.png"
+              alt=""></a>
+          <a target="_blank" href="https://www.linkedin.com/in/kellysun82"><img class="icon"
+              src="./images/nav-LinkedIn.png" alt=""></a>
+        </div>
+      </nav>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <footer>&copy;Kexin Sun</footer>
+  </header>
+  <!-- main content area -->
+  <!-- <div class="layout-wrapper"> -->
+  <main id="main">
+    <!-- Mobile Top Menu -->
+    <div class="top-nav">
+      <a href="index.html"><img class="top-logo" src="./images/KellySun.png" alt="Kelly Sun's LOGO"></a>
+      <a href="menu.html"><img class="menu-icon" src="./images/menu.png" alt="menu icon"></a>
+    </div>
+    <!-- Introduction -->
+    <div class="intro-box">
+      <div class="left-intro">
+        <h1>Hi! I'm Kelly Sun.</h1>
+        <p>Welcome to my portfolio! I'm a dedicated web developer. </p>
+        <p>This portfolio showcases my proficiency in creating user-centric digital experiences through innovative web
+          development and design aesthetics. Feel free to explore. For inquiries or further interest, please don't
+          hesitate to contact me!</p>
+        <a class="btn" href="#">
+          See more projects
+          <span class="right-arrow-icon">
+            <img src="./images/right-arrow.png" alt="right arrow icon">
+          </span>
+        </a>
+      </div>
+      <div id="slideshow">
+        <img class="mySlides" src="./images/project2-2.png" alt="Earth Resources Warning project">
+        <img class="mySlides" src="./images/project3-2.png" alt="Redesign project">
+        <img class="mySlides" src="./images/project4.png" alt="SkyCatch Weather Mobile App">
+        <img class="mySlides" src="./images/project1.png" alt="Zhuxian Town Wood-block prints project">
+        <div id="dots">
+          <span class="dot" onclick="currentImg(1)"></span>
+          <span class="dot" onclick="currentImg(2)"></span>
+          <span class="dot" onclick="currentImg(3)"></span>
+          <span class="dot" onclick="currentImg(4)"></span>
+        </div>
+      </div>
+    </div>
+    <!-- Latest Projects -->
+    <div class="wrapper-container">
+      <h2>Latest Projects</h2>
+      <div id="project-box">
+        <!-- Project 1 -->
+        <div class="project">
+          <div class="project-imgbox">
+            <a href="#"><img src="./images/project2.png" alt="Earth Resources Warning project"></a>
+          </div>
+          <a href="#">
+            <span class="project-name">Earth Resources Warning</span>
+          </a>
+          <a href="#">
+            <span class="project-type">Website Development</span>
+          </a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project">
+          <div class="project-imgbox">
+            <a href="#"><img src="./images/project3.png" alt="Redesign project"></a>
+          </div>
+          <a href="#">
+            <span class="project-name">Redesign</span>
+          </a>
+          <a href="#">
+            <span class="project-type">Website Design</span>
+          </a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project">
+          <div class="project-imgbox">
+            <a href="#"><img src="./images/project1-2.png" alt="Zhuxian Town Wood-block prints project"></a>
+          </div>
+          <a href="#">
+            <span class="project-name">Zhuxian Town Wood-block prints</span>
+          </a>
+          <a href="#">
+            <span class="project-type">Character Branding</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="wrapper-container">
+      <h2>Skills</h2>
+      <div id="skill-box">
+        <img class="skill-icon" src="./images/HTML5.png" alt="HTML5">
+        <img class="skill-icon" src="./images/CSS3.png" alt="CSS3">
+        <img class="skill-icon" src="./images/JavaScript.png" alt="JavaScript">
+        <img class="skill-icon" src="./images/C.png" alt="C">
+        <img class="skill-icon" src="./images/MySQL.png" alt="MySQL">
+        <img class="skill-icon" src="./images/GitHub.png" alt="GitHub">
+        <img class="skill-icon" src="./images/Figma.png" alt="Figma">
+        <img class="skill-icon" src="./images/PS.png" alt="PS">
+        <img class="skill-icon" src="./images/AI.png" alt="AI">
+        <img class="skill-icon" src="./images/CorelDRAW.png" alt="CorelDRAW">
+      </div>
+      <a class="btn" href="Kelly(Kexin)Sun_Example_Resume.pdf" download>
+        <span class="download-icon">
+          <img src="./images/download.png" alt="download icon">
+        </span>
+        Download Resume
+      </a>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="flex-footer">
+      <span>Toronto, Canada</span>
+      <a target="_blank" href="https://kellysun.webflow.io">Personal Website</a>
+      <span>&copy; Kexin Sun, Nov 2024</span>
+    </div>
+  </footer>
 </body>
+<!-- All Images from Kexin Sun -->
+
 </html>
