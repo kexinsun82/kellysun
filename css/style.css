@@ -41,7 +41,7 @@ header ul li {
 }
 li a:link, a:visited, a:active {
   text-decoration: none;
-  color: var(--white);
+  color: var(--pink);
 }
 li a:hover {
   border-bottom: 3px dashed var(--pink);
