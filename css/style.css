@@ -64,6 +64,7 @@ ul {
 .icon-box {
   display: flex;
   flex-direction: column;
+  gap: 2em;
 }
 
 /* Navigation Content */
@@ -82,8 +83,10 @@ ul {
   margin: 0;
   padding: 0;
 }
-.icon {
-  width: 5rem;
+.icon-box a .nav-icon {
+  /* width: 5rem; */
+  font-size: 2em;
+  color: var(--pink);
 }
 
 /* Main FLEX Container */
@@ -218,6 +221,9 @@ h2 {
   height: auto;
   display: block;
   border-radius: 10px;
+}
+.project-tech {
+  font-size: 0.7em;
 }
 .project-type {
   font-weight: 500;
